@@ -1,0 +1,164 @@
+/* General reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 120%;
+    background: #F8F8FF;
+    margin-top: 80px; /* Makes room for the fixed navbar */
+  }
+  
+  /* Navbar Style */
+  .navbar {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar .links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Content Section */
+  .content {
+    width: 80%; /* Makes the content wider */
+    margin: 100px auto; /* Centers the content vertically with the navbar */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #B0C4DE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Button Styles */
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #4C8C8D;
+  }
+  
+  .logout-btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #D32F2F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background: #C2185B;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar .links {
+      display: none; /* Hide links on smaller screens */
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .content {
+      width: 90%; /* Makes the content more responsive */
+    }
+  }
+  /* Add styles for the form and table */
+.form-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

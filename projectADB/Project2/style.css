@@ -1,0 +1,198 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /* Added to prevent padding/margin issues */
+}
+
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.input-group select {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #4C8C8D; /* Slightly darker on hover */
+}
+
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .header, form, .content {
+    width: 90%; /* Makes the form and header more responsive */
+  }
+}
+
+/* Admin Dashboard Styles */
+.dashboard-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 2rem;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.admin-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.admin-actions .btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 1px solid #4CAF50;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-actions .btn:hover {
+  background-color: #45a049;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logout-btn {
+  background-color: #f44336;
+  padding: 12px 25px;
+  text-align: center;
+}
+
+.logout-btn:hover {
+  background-color: #e53935;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .admin-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-actions .btn {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
